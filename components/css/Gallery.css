@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+.App {
+  text-align: center;
+
+}
+
+.App-header {
+  background-color: #000000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.Pagination {
+  margin-right: 5vw;
+  float: right;
+  font-size: 20px;
+  position: relative;
+  top: 90px;
+  color:rgba(46, 45, 45, 0.54)
+}
+
+.Pages {
+  position: relative;
+  top: 2px;
+  padding: 5px;
+  border: none;
+  background: none;
+  font-size: 26px;
+  outline: none;
+  cursor: pointer;
+  color:rgba(46, 45, 45, 0.54)
+}
+
+.PagesNum {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.Results {
+  padding-right: 2vw;
+  text-align: left;
+  font-family: 'Raleway';
+  font-size: 20px;
+  color: rgba(46, 45, 45, 0.44);
+}
+
+.Error {
+  padding-top: 5vh;
+  text-align: center;
+  font-family: 'Raleway';
+  font-size: 25px;
+  color: rgba(46, 45, 45, 0.24);
+}
+
+.Galeria {
+  margin-top: 0px;
+
+}
+
+.Guapo{
+  margin-left: 0 auto;
+  font-family: 'Raleway';
+  padding-bottom: 2vh;
+}
+
+.Filtros {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4vh;
+  width: 40vw;
+  max-width: 600px;
+}
+
+.FiltroDepartments {
+  margin-top: 2vh;
+  font-family: 'Raleway';
+  position: relative;
+  
+}
+
+.SelectDepartment {
+  font-family: 'Raleway';
+  border: none;
+  border-bottom: solid black 1px;
+  font-size: 15px;
+  padding: 1vw;
+  width: 27vw;
+  max-width: 350px;
+ 
+}
+
+.SelectDepartment:focus {
+  outline: none;
+}
+
+.FiltroTime {
+  margin-top: 2vh;
+  font-family: 'Raleway';
+  position: relative;
+  margin-left: 3vw;
+}
+
+.SelectTime {
+  font-family: 'Raleway';
+  border: none;
+  border-bottom: solid black 1px;
+  font-size: 15px;
+  padding: 1vw;
+}
+
+.SelectTime:focus {
+  outline: none;
+}
+
+.Container {
+  position: relative;
+  width: 20vw;
+  height: 20vw;
+  float: left;
+  border: 1px solid black;
+  padding: 0px;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+
+.Container:hover {
+  cursor: pointer;
+}
+
+.Container:hover .Overlay {
+  opacity: 1;
+}
+
+.Overlay {
+  border: 2px solid #e4002b;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: #e4002b;
+  
+}
+
+.OverlayText {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.TitleText {
+  width: 100%;
+  font-family: 'Raleway';
+  color: white;
+  font-size: 1.2vw;
+  
+}
+
+.Divisora {
+  margin: 0 auto;
+  width: 90%;
+  margin-bottom: 3vh;
+  
+  border: solid 1px grey;
+
+}
+
+.ArtistText {
+  color: white;
+  font-size: 0.9vw;
+  
+  margin-top: 10px;
+}
+
+.imgGaleria {
+  object-position: 50% 50%;
+  object-fit: cover;
+  height: 20vw; 
+  width: 20vw;
+  opacity: 1;
+  
+}
+
+.TextDiv {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.InputDiv {
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+.InputText {
+  font-family: 'Raleway';
+
+  float:left;
+  padding: 10px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  border: 1px solid black;
+  border-right: none;
+  width: 40vw;
+}
+
+.InputText::placeholder {
+  font-weight: 400;
+}
+
+.InputText:focus {
+  outline:none;
+}
+
+.SelectButton:focus {
+  outline:none;
+}
+
+.SelectButton:hover {
+  cursor:pointer;
+}
+
+.SelectButton {
+  padding: 10px;
+  padding-top: 17px;
+  padding-bottom: 18px;
+
+  font-size: 18px;
+  background: white;
+  
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: none;
+  border-right: none;
+
+}
+
+.BorraButton {
+  padding: 10px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  width: 60px;
+  font-size: 18px;
+  background: white;
+  
+  cursor: pointer;
+
+  border: 1px solid black;
+  border-left: none;
+}
+
+.BuscaButton {
+
+  margin-left: 3vw;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  border: none;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+
+  background: black;
+  color: white;
+
+  cursor: pointer;
+}
+
+.BuscaButton:hover {
+  background:#e4002b;
+}
+
+.BorraButton:focus {
+  outline:none;
+}
+
+.LoadingDiv {
+  width: 100%;
+  height: 100%;
+  margin-top: 30vh;
+  text-align: center;
+}
+
+.Loading {
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+ 
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

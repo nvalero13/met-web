@@ -1,0 +1,314 @@
+.navbar{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    
+    background: #E4002B;
+    }
+  
+    .logo{
+     padding-top: 0.5%;
+     padding-left: 0.5%;
+    }
+
+    svg{
+        display: inline-block;
+          position: relative;
+        width: 100%;
+          padding-bottom: 1%; 
+          vertical-align: middle; 
+          overflow: hidden; 
+      }
+
+      .RandDiv {
+        width: 100vw;
+        margin: 0 auto;
+        
+      }
+
+      .RandImage {
+        width: 100%;
+        margin: 0 auto;
+        max-height: 100vh;
+        object-fit: cover;
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        
+      }
+
+      .RandTitle {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        
+        font-size: 3vw;
+        font-weight: 700;
+        text-align: center;
+        font-family: 'Playfair';
+        color:#E4002B;
+        z-index: -1;
+      }
+
+      .GoToDetails {
+        background:#E4002B;
+        color: white;
+        position: absolute;
+        right: -4vw;
+        bottom: 10vh;
+        padding: 20px;
+        padding-bottom: 0px;
+        padding-right: 10vw;
+
+        font-family: 'Roboto';
+
+        transition: all 0.3s 0.3s ease-out,
+                    padding-bottom 0.3s ease-out;
+
+      }
+
+      .GoToDetails:hover {
+        transform: translateX(-3vw);
+        padding-bottom: 20px;
+        transition: transform 0.3s ease-out,
+                    padding-bottom 0.3s 0.3s;
+      }
+
+      .Go {
+        opacity: 0;
+        transition: all 0.3s ease-out;
+      }
+
+      .GoToDetails:hover .Go{
+        opacity: 1;
+        transition: all 0.2s 0.3s ease-out;
+      }
+
+      .FlechaDetalles{
+        opacity: 0;
+        transition: all 0.3s ease-out;
+      }
+
+      .GoToDetails:hover .FlechaDetalles{
+        opacity: 1;
+        transition: all 0.2s 0.3s ease-out;
+      }
+
+      .More {
+        font-size: 25px;
+        font-family: 'Playfair';
+        padding-bottom: 2px;
+      }
+
+      .arrow {
+        position: relative;
+        opacity: 0;
+        top: -2px;
+        left: 7px;
+        width: 15px;
+        float: left;
+        transform: scaleX(-1);
+
+        transition: all 0.3s
+        
+      }
+
+      .backtogallery {
+         width: 145px;
+        padding-bottom: 3px;
+        text-align: left;
+        margin-top: 4vh;
+        margin-left: 5vw;
+        margin-bottom: 4vh;
+        font-family: 'Raleway';
+        font-size: 18px;
+        color:#E4002B;
+      }
+
+      .backtext {
+        float: left;
+        position: relative;
+        left: -15px;
+        font-family: 'Raleway';
+        font-size: 18px;
+        color:#E4002B;
+
+        transition: all 0.3s 0.2s
+      }
+
+      .backtogallery:hover {
+        cursor: pointer;
+        
+        transition: all 0.3s
+      }
+
+      .backtogallery:hover .arrow {
+        opacity: 1;
+        
+        transition: all 0.3s 0.1s
+      }
+
+      .backtogallery:hover .backtext {
+        left: 10px;
+        
+        transition: all 0.3s 
+      }
+
+      .detailinfo{
+        padding: 10%;
+        padding-top: 3%;
+      }
+      
+      .pieceinfo{
+        text-align: left;
+        padding-left: 5%;
+      
+      }
+
+      .imageholder{
+        margin-bottom: 26px;
+        text-align:left;
+        float: left;
+        width: 50%;
+        margin-right: 5%;
+      }
+
+      .pieceimage{
+        width: 100%;
+     
+      }
+
+      .piecetitle{
+        margin-bottom: 1.4%;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        
+        color: #000000;
+        
+      }
+      
+      .piecedepartment{
+        margin-top: 1%;
+        margin-bottom: 1.5%;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+
+        color: #FF0A0A;
+      }
+
+      .piececountry{
+        margin-left: 0.5%;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+
+        color: #000000;
+      }
+
+      .artistbio{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+
+        color: #7C7A7A;
+
+      }
+      
+      
+      
+     .pieceperiod{
+      
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28px;
+
+      color: #7B7B7B;
+
+
+     }
+
+     .artistbio{
+       margin-bottom: 1.5%;
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 21px;
+      
+      color: #7C7A7A;
+      
+     }
+
+
+     .portfolio{
+      font-family: 'Raleway';
+      font-style: italic;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 18px;
+      
+      color: #7D7C7C;
+      
+     }
+      .divider{
+        margin-top: 1.5%;
+        margin-bottom: 1.5%;
+      }
+
+      .artistname{
+        margin-bottom: 1%;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+
+        color: #000000;
+      }
+
+    .extrainfo{
+    margin-bottom: 1%;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+
+      color: #000000;
+    }
+  
+      .imagerights{
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      text-align: center;
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+
+      color: #212121;
+
+    }
+
